@@ -404,9 +404,15 @@ address a {
 }
 .join-us {
   padding-top: 72px;
-  padding-left: 70px;
+  margin-left: 70px;
 }
-.join-us p {
+.form-email {
+  display: flex;
+}
+.sign-in-label {
+  margin-right: 12px;
+}
+.white-txt {
   padding-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -442,6 +448,56 @@ address a {
 .social-links-link-join-us:focus {
   background-color: var(--webstudio-blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*===================== ZAPISZ SIĘ ================= */
+
+.form-space-email-footer {
+  background-color: var(--slogan-background);
+  outline: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 356px;
+  height: 50px;
+  border: none;
+  padding-left: 16px;
+
+  color: var(--main-white);
+}
+
+.svg-send {
+  width: 24px;
+  height: 24px;
+}
+.button-footer {
+  display: flex;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+  border: none;
+
+  background: var(--webstudio-blue);
+  color: var(--main-white);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+  padding: 0;
+}
+.sign-in-txt {
+  padding-left: 42px;
+  padding-right: 24px;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.sign-in {
+  padding-top: 72px;
+  margin-left: 70px;
 }
 
 /* =================== PORTFOLIO ================= 
@@ -599,5 +655,161 @@ address a {
 .close-btn:focus {
   cursor: pointer;
   fill: crimson;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-btn .svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ================= FORMULARZ ================== 
++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* ================= FORMULARZ BUTTON ================== */
+
+.form-button {
+  display: flex;
+  padding: 10px 76px;
+
+  width: 200px;
+  min-height: 50px;
+  border: none;
+
+  background: var(--webstudio-blue);
+  color: var(--main-white);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.form-button-position {
+  display: flex;
+  justify-content: center;
+}
+/* ================= FORMULARZ STYLE ================== */
+
+.form-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  padding-bottom: 12px;
+}
+.form-margin {
+  margin: 40px;
+}
+.form-txt {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166;
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+  padding-bottom: 4px;
+  padding-top: 10px;
+}
+.form-space-comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-label {
+  position: relative;
+}
+.form-space {
+  width: 448px;
+  min-height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+
+  resize: none;
+}
+.form-space:focus-within {
+  outline-color: var(--webstudio-blue);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-space-comment {
+  padding: 12px 16px;
+}
+.form-space-input {
+  padding-left: 40px;
+}
+.form-link {
+  color: var(--webstudio-blue);
+  text-decoration-line: underline;
+}
+.svg-form {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  bottom: 0px;
+  left: 12px;
+}
+.label-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.form-statute {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-right: 12px;
+  text-align: right;
+}
+
+.form-statute::before {
+  display: inline-block;
+  /* justify-content: center;
+  align-items: center; */
+
+  content: "";
+  width: 16px;
+  height: 16px;
+  outline: 1px solid #000;
+  border-radius: 2px;
+  margin-right: 9px;
+  cursor: pointer;
+}
+
+.checkbox-sign:checked + .form-statute::before {
+  background-color: #2196f3;
+  outline: none;
+  z-index: 15;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/icons.svg#icon-check);
+  fill: red;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.form-label:focus-within {
+  fill: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
