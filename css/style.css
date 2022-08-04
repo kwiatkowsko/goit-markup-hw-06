@@ -755,13 +755,14 @@ address a {
   bottom: 0px;
   left: 12px;
 }
-.label-checkbox {
-  display: flex;
-  align-items: center;
-}
+/* .label-checkbox {
+display: flex;
+align-items: center;
+justify-content: center;
+} */
 
 .form-statute {
-  display: inline;
+  display: flex;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
@@ -777,37 +778,29 @@ address a {
 .form-link {
   color: var(--webstudio-blue);
   text-decoration-line: underline;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .form-statute::before {
-  display: inline-flex;
-
   content: "";
   width: 16px;
   height: 16px;
   border: 1px solid #000;
   border-radius: 2px;
-  margin-right: 8px;
+  margin-right: 7px;
   cursor: pointer;
 }
-
 .checkbox-sign:checked + .form-statute::before {
   background-color: #2196f3;
   border: none;
-  z-index: 15;
   width: 16px;
   height: 16px;
   background-image: url(../images/icon_check.svg);
-  fill: red;
 }
 .visually-hidden {
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
   position: absolute;
-  white-space: nowrap;
-  width: 1px;
 }
 .form-label:focus-within {
   fill: #2196f3;
