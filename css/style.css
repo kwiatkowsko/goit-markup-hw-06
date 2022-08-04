@@ -780,9 +780,9 @@ address a {
 }
 
 .form-statute::before {
-  display: inline-block;
-  /* justify-content: center;
-  align-items: center; */
+  display: inline-flex;
+
+
   content: "";
   width: 16px;
   height: 16px;
@@ -798,7 +798,7 @@ address a {
   z-index: 15;
   width: 16px;
   height: 16px;
-  background-image: url(../images/icons.svg#icon-check);
+  background-image: url(images/icon_check.svg);
   fill: red;
 }
 .visually-hidden {
