@@ -756,9 +756,9 @@ address a {
   left: 12px;
 }
 /* .label-checkbox {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 } */
 
 .form-statute {
@@ -774,8 +774,6 @@ justify-content: center;
   color: #757575;
   padding-top: 20px;
   padding-bottom: 40px;
-  padding-right: 12px;
-  text-align: right;
 }
 .form-link {
   color: var(--webstudio-blue);
