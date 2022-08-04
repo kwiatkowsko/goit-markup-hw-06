@@ -633,8 +633,7 @@ address a {
 
   width: 528px;
   min-height: 581px;
-  padding-top: 8px;
-  padding-right: 8px;
+  padding: 8px;
   border-radius: 4px;
 }
 .close-btn {
@@ -650,6 +649,10 @@ address a {
   background-color: var(--main-white);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+.close-btn-svg {
+  width: 14px;
+  height: 14px;
 }
 .close-btn:hover,
 .close-btn:focus {
@@ -670,10 +673,7 @@ address a {
   display: flex;
   padding: 10px 76px;
 
-  width: 200px;
-  min-height: 50px;
   border: none;
-
   background: var(--webstudio-blue);
   color: var(--main-white);
 
@@ -704,7 +704,7 @@ address a {
   padding-bottom: 12px;
 }
 .form-margin {
-  margin: 40px;
+  padding: 32px;
 }
 .form-txt {
   font-weight: 400;
@@ -722,6 +722,8 @@ address a {
 }
 .form-label {
   position: relative;
+  display: flex;
+  flex-flow: column;
 }
 .form-space {
   width: 448px;
@@ -752,14 +754,14 @@ address a {
   width: 18px;
   height: 18px;
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   left: 12px;
 }
-/* .label-checkbox {
+.label-checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+}
 
 .form-statute {
   display: flex;
@@ -779,7 +781,7 @@ address a {
   color: var(--webstudio-blue);
   text-decoration-line: underline;
   padding-left: 4px;
-  padding-right: 4px;
+  justify-content: center;
 }
 
 .form-statute::before {
