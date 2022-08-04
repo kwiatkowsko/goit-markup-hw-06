@@ -781,6 +781,7 @@ address a {
   color: var(--webstudio-blue);
   text-decoration-line: underline;
   padding-left: 4px;
+  padding-right: 4px;
   justify-content: center;
 }
 
