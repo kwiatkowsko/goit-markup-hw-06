@@ -708,7 +708,9 @@ address a {
   padding-bottom: 4px;
   padding-top: 10px;
 }
-
+textarea {
+  resize: none;
+}
 .form-space {
   width: 448px;
   min-height: 40px;
